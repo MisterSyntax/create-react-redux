@@ -1,5 +1,5 @@
 {
-    "allDrinks": [
+    "drinks": [
         {
             "name": "Bud Light",
             "bar": "SideBar",
