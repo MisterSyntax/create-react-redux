@@ -7,13 +7,13 @@ import C from '../constants.js'
 import { combineReducers } from 'redux'
 
 //TODO: Remove/Replace Sample reducer
-export const enable = (state = false, action) => {
+export const drinks = (state = [], action) => {
     switch (action.type) {
-        case C.ENABLE: {
-            return true
+        case C.ADD_DRINK: {
+            return [...state,action.payload];
         }
-        case C.DISABLE: {
-            return false
+        case C.REMOVE_DRINK: {
+            return state.filter(curr=>curr.id !== action.payload)
         }
         default:{
             return state
@@ -22,5 +22,5 @@ export const enable = (state = false, action) => {
 }
 
 export default combineReducers({
-    enable
+    drinks
 })
