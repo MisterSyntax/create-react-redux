@@ -7,7 +7,6 @@ export default class DrinkList extends React.Component{
     render(){
         return(
         <div id="drink-list">
-
         </div>)
     }
 }
