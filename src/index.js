@@ -7,7 +7,7 @@ import storeFactory from './store/'
 //sampleData
 import sampleData from './initialState.json'
 //Import Main Container
-import App from './containers/App/'
+import App from './components/App/'
 import { BrowserRouter } from 'react-router-dom'
 //import root style
 import './index.css';
@@ -27,7 +27,8 @@ store.subscribe(saveState)
 //For debugging purposes we expose the store
 window.store = store
 
-render(    <Provider store={store}>
+render(    
+    <Provider store={store}>
         <BrowserRouter>
             <App/>
         </BrowserRouter>
