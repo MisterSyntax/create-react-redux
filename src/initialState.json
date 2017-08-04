@@ -1,0 +1,28 @@
+{
+    "allDrinks": [
+        {
+            "name": "Bud Light",
+            "bar": "SideBar",
+            "geo": {
+                "lat": 42.356423,
+                "lng": -71.06008400000002
+            },
+            "address": "14 Bromfield St, Boston, MA 02108, USA",
+            "price": 2,
+            "size": 16,
+            "drinkId": 1499456917370
+        },
+        {
+            "name": "Bud Light",
+            "bar": "Coogan's",
+            "geo": {
+                "lat": 42.3582517,
+                "lng": -71.05338840000002
+            },
+            "address": "171 Milk St, Boston, MA 02109, USA",
+            "price": 1,
+            "size": 16,
+            "drinkId": 1499456941482
+        }
+    ]
+}
