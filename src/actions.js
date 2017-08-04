@@ -8,14 +8,16 @@
  */
 import C from "./constants"
 
-export const enableContent = () => {
+export const addDrink = (drink) => {
     return {
-        type: C.ENABLE
+        type: C.ADD_DRINK,
+        payload: drink
     }
 }
 
-export const disableContent = () => {
+export const disableContent = (id) => {
     return {
-        type: C.DISABLE
+        type: C.REMOVE_DRINK,
+        payload: id
     }
 }
